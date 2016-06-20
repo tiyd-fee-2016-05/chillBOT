@@ -1,0 +1,168 @@
+// Colors:
+$white: #F3E5B1;
+$teal: #9DD5CB;
+$turquoise: #013C4D;
+$orange: #D5441C;
+$reddish: #903749;
+
+$blue1: #28385E;
+$blue2: #304163;
+$blue3: #516C8D;
+$grey: #DDDDDD;
+
+
+body {
+  background: $grey;
+  font-family: sans-serif;
+  color: $grey;
+  letter-spacing: .5px;
+}
+
+.container {
+  background: $grey;
+  width: 100%;
+  margin: auto;
+
+  .logo {
+    background: $blue3;
+    height: 200px;
+    padding: 80px 80px 0 60px;
+    font-size: 30px;
+  }
+  .logo:hover {
+    // color: $blue2;
+  }
+  .chat-box {
+    margin-top: 10px;
+    padding-top: 10px;
+
+    .user-chat {
+      background: $blue2;
+      border: 2px solid $blue2;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding: 20px;
+      width: 60%;
+      // float: right;
+      margin-left: 340px;
+      margin-bottom: 20px;
+      padding-right: 40px;
+      font-size: 40px;
+    }
+    .user-chat:hover {
+      background: $blue1;
+    }
+    .response-chat {
+      background: $blue1;
+      border: 2px solid $blue1;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 20px;
+      width: 60%;
+      // float: left;
+      margin-right: 340px;
+      margin-bottom: 20px;
+      padding-left: 40px;
+      font-size: 40px;
+    }
+    .response-chat:hover {
+      background: $blue2;
+    }
+  }
+  .user-input {
+    // position: fixed;
+
+    // width: 40%;
+    text-align: center;
+
+    .write-here {
+      background: #FFF;
+      border: 2px solid #FFF;
+      width: 100%;
+      height: 300px;
+      margin-top: 50px;
+      color: $blue1;
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
+    .chat-button {
+      background: $blue1;
+      border: 2px solid $blue1;
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      color: $grey;
+      font-size: 45px;
+      letter-spacing: 8px;
+      font-weight: bold;
+    }
+    .chat-button:hover {
+        background: $blue2;
+    }
+  }
+}
+
+
+
+
+// .container {
+//   background: $grey;
+//   width: 100%;
+//   margin: auto;
+//
+//   .logo {
+//     background: $blue3;
+//     height: 60px;
+//     padding: 40px 40px 0 40px;
+//   }
+//   .logo:hover {
+//     // color: $blue2;
+//   }
+//   .chat-box {
+//
+//     .user-chat {
+//       background: $blue2;
+//       padding: 20px;
+//       width: 40%;
+//       float: right;
+//     }
+//     .user-chat:hover {
+//       background: $blue1;
+//     }
+//     .response-chat {
+//       background: $blue1;
+//       padding: 20px;
+//       width: 40%;
+//       float: left;
+//     }
+//     .response-chat:hover {
+//       background: $blue2;
+//     }
+//   }
+//   .user-input {
+//     // width: 40%;
+//     text-align: center;
+//
+//     .write-here {
+//       background: $grey;
+//       border: 2px solid $grey;
+//       width: 568px;
+//       height: 100px;
+//     }
+//     .chat-button {
+//       background: $blue1;
+//       border: 2px solid $blue1;
+//       border-radius: 3px;
+//       width: 200px;
+//       height: 60px;
+//       text-align: center;
+//       color: $grey;
+//       font-size: 14px;
+//       letter-spacing: 2px;
+//       font-weight: bold;
+//     }
+//     .chat-button:hover {
+//         background: $blue2;
+//     }
+//   }
+// }
