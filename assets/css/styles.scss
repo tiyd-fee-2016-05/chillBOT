@@ -30,7 +30,7 @@ body {
   width: 100%;
   margin: auto;
 
-  .logo {   
+  .logo {
     position: fixed;
     background: $teal;
     border-bottom: 8px solid $blue3;
@@ -52,7 +52,7 @@ body {
     color: $blue3;
   }
   .chat-box {
-    padding-top: 260px;
+    padding: 260px 0 400px 0;
     overflow: auto;
     height: 1145px;
     line-height: 50px;

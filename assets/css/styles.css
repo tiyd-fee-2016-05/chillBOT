@@ -29,7 +29,7 @@ body {
   .container .logo:hover {
     color: #516C8D; }
   .container .chat-box {
-    padding-top: 260px;
+    padding: 260px 0 400px 0;
     overflow: auto;
     height: 1145px;
     line-height: 50px; }
