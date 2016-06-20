@@ -21,6 +21,8 @@ body {
     font-family: 'Lobster Two', cursive;
     color: #304163;
     font-size: 80px; }
+  .container img {
+    width: 100px; }
   .container .logo2 {
     font-family: 'Roboto Slab', serif;
     font-weight: 700; }
