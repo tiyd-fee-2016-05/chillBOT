@@ -14,7 +14,7 @@ submit.submit(function (e){
   e.preventDefault()
   console.log("Submit works!");
   //$("chatBox:first-child").css("display", "none");
-
+  chatBox.append('<div class="user-chat">' + $('.write-here').val() + '</div>')
   //$(".write-here").val("");
 
   if ($('.write-here').val() == "@help"){
@@ -24,6 +24,9 @@ submit.submit(function (e){
     '<p>@chill genre gives you a chill movie to chill to</p></br>' +
     '<p> or...we can just chill?</p>'
   );
+  }
+  else if ($('.write-here').val() == "help") {
+    chatBox.append('<div class="response-chat">' + "Did you mean @Help?" + '</div>')
   }
   //chatBox.first().css("display", "none");
   $(".write-here").val("");
