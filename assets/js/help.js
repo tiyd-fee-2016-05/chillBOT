@@ -13,6 +13,8 @@ $(".write-here").keypress(function (e) {  //Got this from stackoverflow, allows 
 submit.submit(function (e){
   e.preventDefault()
   console.log("Submit works!");
+  //$("chatBox:first-child").css("display", "none");
+
   //$(".write-here").val("");
 
   if ($('.write-here').val() == "@help"){
@@ -23,5 +25,6 @@ submit.submit(function (e){
     '<p> or...we can just chill?</p>'
   );
   }
+  //chatBox.first().css("display", "none");
   $(".write-here").val("");
 })
