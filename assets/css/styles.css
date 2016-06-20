@@ -33,11 +33,6 @@ body {
     overflow: auto;
     height: 1145px;
     line-height: 50px; }
-    .container .chat-box .text {
-      font-family: sans-serif;
-      font-weight: normal;
-      letter-spacing: 1px;
-      font-size: 40px; }
     .container .chat-box .response-chat {
       background: #28385E;
       border: 2px solid #28385E;
@@ -47,7 +42,11 @@ body {
       width: 70%;
       margin-right: 340px;
       margin-bottom: 20px;
-      padding-left: 40px; }
+      padding-left: 40px;
+      font-family: sans-serif;
+      font-weight: normal;
+      letter-spacing: 1px;
+      font-size: 40px; }
     .container .chat-box .response-chat:hover {
       background: #304163; }
     .container .chat-box .user-chat {
@@ -59,7 +58,11 @@ body {
       width: 60%;
       margin-left: 340px;
       margin-bottom: 20px;
-      padding-right: 40px; }
+      padding-right: 40px;
+      font-family: sans-serif;
+      font-weight: normal;
+      letter-spacing: 1px;
+      font-size: 40px; }
     .container .chat-box .user-chat:hover {
       background: #28385E; }
   .container .user-input {
