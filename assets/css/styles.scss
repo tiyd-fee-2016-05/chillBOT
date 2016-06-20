@@ -28,7 +28,7 @@ body {
   width: 100%;
   margin: auto;
 
-  .logo {
+  .logo {    // add ice cubesss
     background: $teal;
     width: 100%;
     height: 150px;
@@ -37,31 +37,40 @@ body {
     color: $blue1;
     font-size: 80px;
   }
-  span {
+  .logo2 {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
   }
   .logo:hover {
-    // color: $blue2;
+    color: $blue3;
   }
   .chat-box {
     margin-top: 10px;
     padding-top: 10px;
     overflow: auto;
     height: 1100px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    .text {
+      font-family: sans-serif;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
 
     .user-chat {
       background: $blue3;
       border: 2px solid $blue3;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
-      padding: 20px;
+      padding: 30px;
       width: 60%;
       // float: right;
       margin-left: 340px;
       margin-bottom: 20px;
       padding-right: 40px;
-      font-size: 40px;
     }
     .user-chat:hover {
       background: $blue1;
@@ -71,13 +80,12 @@ body {
       border: 2px solid $blue1;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
-      padding: 20px;
+      padding: 30px;
       width: 60%;
       // float: left;
       margin-right: 340px;
       margin-bottom: 20px;
       padding-left: 40px;
-      font-size: 40px;
     }
     .response-chat:hover {
       background: $blue2;
@@ -99,19 +107,20 @@ body {
       letter-spacing: 3px;
     }
     .chat-button {
-      background: $blue1;
-      border: 2px solid $blue1;
+      background: $teal;
+      border: 2px solid $teal;
       width: 100%;
       height: 140px;
       text-align: center;
-      color: $grey;
+      font-family: 'Roboto Slab', serif;
+      color: $blue1;
       font-size: 45px;
-      letter-spacing: 8px;
+      letter-spacing: 4px;
       font-weight: bold;
     }
     .chat-button:hover {
-        background: $teal;
-        border: 2px solid $teal;
+        background: $blue1;
+        border: 2px solid $blue1;
     }
   }
 }
