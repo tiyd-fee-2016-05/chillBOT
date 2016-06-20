@@ -16,6 +16,17 @@ $grey: #DDDDDD;
 // font-family: 'Roboto Slab', serif;
 
 
+@media (min-width: 1025px) {  // Desktop
+
+}
+
+@media (min-width: 640px) {  // Tablet
+
+
+}
+
+
+@media (min-width: 320px) {  // Mobile
 body {
   background: $grey;
   font-family: sans-serif;
@@ -24,7 +35,6 @@ body {
   letter-spacing: 1px;
   font-size: 40px;
 }
-
 .container {
   background: $grey;
   width: 100%;
@@ -130,4 +140,5 @@ body {
         color: $grey;
     }
   }
+}
 }
