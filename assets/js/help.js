@@ -25,6 +25,6 @@ submit.submit(function (e){
     '<p> or...we can just chill?</p>'
   );
   }
-  chatBox.first().css("display", "none");
+  //chatBox.first().css("display", "none");
   $(".write-here").val("");
 })
