@@ -31,12 +31,25 @@ body {
   .container .chat-box {
     padding-top: 260px;
     overflow: auto;
-    height: 1150px; }
+    height: 1145px;
+    line-height: 50px; }
     .container .chat-box .text {
       font-family: sans-serif;
       font-weight: normal;
       letter-spacing: 1px;
       font-size: 40px; }
+    .container .chat-box .response-chat {
+      background: #28385E;
+      border: 2px solid #28385E;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 30px;
+      width: 70%;
+      margin-right: 340px;
+      margin-bottom: 20px;
+      padding-left: 40px; }
+    .container .chat-box .response-chat:hover {
+      background: #304163; }
     .container .chat-box .user-chat {
       background: #516C8D;
       border: 2px solid #516C8D;
@@ -49,18 +62,6 @@ body {
       padding-right: 40px; }
     .container .chat-box .user-chat:hover {
       background: #28385E; }
-    .container .chat-box .response-chat {
-      background: #28385E;
-      border: 2px solid #28385E;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      padding: 30px;
-      width: 60%;
-      margin-right: 340px;
-      margin-bottom: 20px;
-      padding-left: 40px; }
-    .container .chat-box .response-chat:hover {
-      background: #304163; }
   .container .user-input {
     position: fixed;
     width: 100%;

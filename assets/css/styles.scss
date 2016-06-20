@@ -55,7 +55,8 @@ body {
   .chat-box {
     padding-top: 260px;
     overflow: auto;
-    height: 1150px;
+    height: 1145px;
+    line-height: 50px;
     // font-family: 'Roboto Slab', serif;
     // font-size: 40px;
     // font-weight: bold;
@@ -68,6 +69,21 @@ body {
       font-size: 40px;
     }
 
+    .response-chat {
+      background: $blue1;
+      border: 2px solid $blue1;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 30px;
+      width: 70%;
+      // float: left;
+      margin-right: 340px;
+      margin-bottom: 20px;
+      padding-left: 40px;
+    }
+    .response-chat:hover {
+      background: $blue2;
+    }
     .user-chat {
       background: $blue3;
       border: 2px solid $blue3;
@@ -82,21 +98,6 @@ body {
     }
     .user-chat:hover {
       background: $blue1;
-    }
-    .response-chat {
-      background: $blue1;
-      border: 2px solid $blue1;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      padding: 30px;
-      width: 60%;
-      // float: left;
-      margin-right: 340px;
-      margin-bottom: 20px;
-      padding-left: 40px;
-    }
-    .response-chat:hover {
-      background: $blue2;
     }
   }
   .user-input {
