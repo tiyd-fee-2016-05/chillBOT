@@ -93,6 +93,7 @@ body {
       font-weight: bold; }
     .container .user-input .chat-button:hover {
       background: #28385E;
-      border: 2px solid #28385E; }
+      border: 2px solid #28385E;
+      color: #DDDDDD; }
 
 /*# sourceMappingURL=styles.css.map */
