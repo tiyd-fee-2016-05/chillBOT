@@ -23,6 +23,9 @@ submit.submit(function(e){
   else if ($.inArray($('.write-here').val().toLowerCase(), hellos)  >= 0){
     chatBox.append('<div class="response-chat">' + "ello gubanor" + '</div>')
   }
+  else if($('.write-here').val().toLowerCase().search("@giphy") >= 0){
+    giphyFunction
+  }
   else{
     console.log("what?");
   }
