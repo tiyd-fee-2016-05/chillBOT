@@ -30,7 +30,7 @@ body {
   width: 100%;
   margin: auto;
 
-  .logo {    // add ice cubesss
+  .logo {   
     position: fixed;
     background: $teal;
     border-bottom: 8px solid $blue3;
@@ -43,7 +43,6 @@ body {
   }
   img {
     width: 100px;
-    // height: 687px;
   }
   .logo2 {
     font-family: 'Roboto Slab', serif;
@@ -57,10 +56,6 @@ body {
     overflow: auto;
     height: 1145px;
     line-height: 50px;
-    // font-family: 'Roboto Slab', serif;
-    // font-size: 40px;
-    // font-weight: bold;
-    // letter-spacing: 1px;
 
     .text {
       font-family: sans-serif;
@@ -76,7 +71,6 @@ body {
       border-bottom-right-radius: 20px;
       padding: 30px;
       width: 70%;
-      // float: left;
       margin-right: 340px;
       margin-bottom: 20px;
       padding-left: 40px;
@@ -91,7 +85,6 @@ body {
       border-bottom-left-radius: 20px;
       padding: 30px;
       width: 60%;
-      // float: right;
       margin-left: 340px;
       margin-bottom: 20px;
       padding-right: 40px;
@@ -101,8 +94,10 @@ body {
     }
   }
   .user-input {
-    position: fixed;
-    width: 100%;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
     text-align: center;
 
     .write-here {
@@ -110,6 +105,7 @@ body {
       border: 2px solid #FFF;
       width: 100%;
       height: 200px;
+      padding: 20px;
       color: $blue1;
       font-size: 30px;
       letter-spacing: 3px;
