@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  color: #DDDDDD;
+  letter-spacing: .5px; }
+
+.container {
+  background: #DDDDDD;
+  width: 40%;
+  margin: auto; }
+  .container .logo {
+    background: #516C8D;
+    padding: 20px; }
+  .container .chat-box .user-chat {
+    background: #304163;
+    padding: 20px; }
+  .container .chat-box .response-chat {
+    background: #28385E;
+    padding: 20px; }
+  .container .user-input .write-here {
+    background: #DDDDDD; }
+  .container .user-input .chat-button {
+    background: #28385E; }
+
+/*# sourceMappingURL=styles.css.map */

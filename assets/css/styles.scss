@@ -1,0 +1,51 @@
+// Colors:
+$white: #F3E5B1;
+$teal: #9DD5CB;
+$turquoise: #013C4D;
+$orange: #D5441C;
+$reddish: #903749;
+
+$blue1: #28385E;
+$blue2: #304163;
+$blue3: #516C8D;
+$grey: #DDDDDD;
+
+
+body {
+  font-family: sans-serif;
+  color: $grey;
+  letter-spacing: .5px;
+}
+
+.container {
+  background: $grey;
+  width: 40%;
+  margin: auto;
+
+  .logo {
+    background: $blue3;
+    padding: 20px;
+
+  }
+  .chat-box {
+
+    .user-chat {
+      background: $blue2;
+      padding: 20px;
+    }
+    .response-chat {
+      background: $blue1;
+      padding: 20px;
+    }
+  }
+  .user-input {
+
+
+    .write-here {
+      background: $grey;
+    }
+    .chat-button {
+      background: $blue1;
+    }
+  }
+}
