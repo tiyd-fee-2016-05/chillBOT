@@ -13,9 +13,9 @@ var chatBox= $(".chat-box");
 function helpFunction(e){
   e.preventDefault()
   console.log("Submit works!");
-    chatBox.append('<div class="response-chat">' + '<p>Here are a list of commands<p></br>' +
-    '<p>@temp city st gives you the current temperature for a city.</p></br>' +
-    '<p>@giphy anything gives you a chill gif matchings your word </p></br>' +
+    chatBox.append('<div class="response-chat">' + '<p>here are a list of commands:<p></br>' +
+    '<p>@temp city st gives you the current temperature for a city</p></br>' +
+    '<p>@giphy anything gives you a chill gif matching your words </p></br>' +
     '<p>@chill genre gives you a chill movie to chill to</p></br>' +
     '<p> or...we can just chill?</p>'
   );
