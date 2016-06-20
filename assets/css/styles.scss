@@ -57,13 +57,6 @@ body {
     height: 1145px;
     line-height: 50px;
 
-    .text {
-      font-family: sans-serif;
-      font-weight: normal;
-      letter-spacing: 1px;
-      font-size: 40px;
-    }
-
     .response-chat {
       background: $blue1;
       border: 2px solid $blue1;
@@ -74,6 +67,10 @@ body {
       margin-right: 340px;
       margin-bottom: 20px;
       padding-left: 40px;
+      font-family: sans-serif;
+      font-weight: normal;
+      letter-spacing: 1px;
+      font-size: 40px;
     }
     .response-chat:hover {
       background: $blue2;
@@ -88,6 +85,10 @@ body {
       margin-left: 340px;
       margin-bottom: 20px;
       padding-right: 40px;
+      font-family: sans-serif;
+      font-weight: normal;
+      letter-spacing: 1px;
+      font-size: 40px;
     }
     .user-chat:hover {
       background: $blue1;
@@ -105,6 +106,7 @@ body {
       border: 2px solid #FFF;
       width: 100%;
       height: 200px;
+      margin-bottom: -5px;
       padding: 20px;
       color: $blue1;
       font-size: 30px;
@@ -125,6 +127,7 @@ body {
     .chat-button:hover {
         background: $blue1;
         border: 2px solid $blue1;
+        color: $grey;
     }
   }
 }
