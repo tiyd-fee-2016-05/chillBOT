@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Lobster+Two:700|Roboto+Slab:400,700|Slabo+27px";
 body {
   background: #DDDDDD;
   font-family: sans-serif;
@@ -9,16 +10,24 @@ body {
   width: 100%;
   margin: auto; }
   .container .logo {
-    background: #516C8D;
-    height: 200px;
+    background: #9DD5CB;
+    width: 100%;
+    height: 150px;
     padding: 80px 80px 0 60px;
-    font-size: 30px; }
+    font-family: 'Lobster Two', cursive;
+    color: #28385E;
+    font-size: 80px; }
+  .container span {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700; }
   .container .chat-box {
     margin-top: 10px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    overflow: auto;
+    height: 1100px; }
     .container .chat-box .user-chat {
-      background: #304163;
-      border: 2px solid #304163;
+      background: #516C8D;
+      border: 2px solid #516C8D;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
       padding: 20px;
@@ -48,8 +57,7 @@ body {
       background: #FFF;
       border: 2px solid #FFF;
       width: 100%;
-      height: 300px;
-      margin-top: 50px;
+      height: 200px;
       color: #28385E;
       font-size: 30px;
       letter-spacing: 3px; }
@@ -57,13 +65,14 @@ body {
       background: #28385E;
       border: 2px solid #28385E;
       width: 100%;
-      height: 150px;
+      height: 140px;
       text-align: center;
       color: #DDDDDD;
       font-size: 45px;
       letter-spacing: 8px;
       font-weight: bold; }
     .container .user-input .chat-button:hover {
-      background: #304163; }
+      background: #9DD5CB;
+      border: 2px solid #9DD5CB; }
 
 /*# sourceMappingURL=styles.css.map */
