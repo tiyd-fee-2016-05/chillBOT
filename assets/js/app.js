@@ -1,5 +1,6 @@
 var submit = $(".user-input");
 var chatBox= $(".chat-box");
+var hellos= ["hello","hey","hi","sup","what's up","whats up"]
 //var input = $('.write-here');
 
 //function to display help options
@@ -13,11 +14,17 @@ $(".write-here").keypress(function (e) {  //Got this from stackoverflow, allows 
 submit.submit(function(e){
   e.preventDefault();
   chatBox.append('<div class="user-chat">' + $('.write-here').val() + '</div>')
-  if ($('.write-here').val() === "@help"){
+  if ($('.write-here').val().toLowerCase() === "@help"){
     helpFunction(e);
   }
-  else if ($('.write-here').val() === "help") {
+  else if ($('.write-here').val().toLowerCase() === "help") {
     chatBox.append('<div class="response-chat">' + "Did you mean @Help?" + '</div>');
+  }
+  else if ($.inArray($('.write-here').val().toLowerCase(), hellos)  >= 0){
+    chatBox.append('<div class="response-chat">' + "ello gubanor" + '</div>')
+  }
+  else{
+    console.log("what?");
   }
 
   $(".chat-box").animate({ scrollTop: $(".chat-box")[0].scrollHeight}, 500); //got this from Stackoverflow once again you are bae!
