@@ -3,19 +3,23 @@ body {
   background: #DDDDDD;
   font-family: sans-serif;
   color: #DDDDDD;
-  letter-spacing: .5px; }
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 40px; }
 
 .container {
   background: #DDDDDD;
   width: 100%;
   margin: auto; }
   .container .logo {
+    position: fixed;
     background: #9DD5CB;
+    border-bottom: 8px solid #516C8D;
     width: 100%;
     height: 150px;
     padding: 80px 80px 0 60px;
     font-family: 'Lobster Two', cursive;
-    color: #28385E;
+    color: #304163;
     font-size: 80px; }
   .container .logo2 {
     font-family: 'Roboto Slab', serif;
@@ -23,18 +27,14 @@ body {
   .container .logo:hover {
     color: #516C8D; }
   .container .chat-box {
-    margin-top: 10px;
-    padding-top: 10px;
+    padding-top: 260px;
     overflow: auto;
-    height: 1150px;
-    font-family: 'Roboto Slab', serif;
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 1px; }
+    height: 1150px; }
     .container .chat-box .text {
       font-family: sans-serif;
       font-weight: normal;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      font-size: 40px; }
     .container .chat-box .user-chat {
       background: #516C8D;
       border: 2px solid #516C8D;
@@ -60,6 +60,8 @@ body {
     .container .chat-box .response-chat:hover {
       background: #304163; }
   .container .user-input {
+    position: fixed;
+    width: 100%;
     text-align: center; }
     .container .user-input .write-here {
       background: #FFF;
