@@ -66,7 +66,11 @@ $(".write-here").keypress(function (e) {  //Got this from stackoverflow, allows 
 submit.submit(function(e){
   e.preventDefault();
   chatBox.append('<div class="user-chat">' + $('.write-here').val() + '</div>')
-  if ($('.write-here').val().toLowerCase() === "@help"){
+  if($('.write-here').val().toLowerCase() === "@clear"){
+    chatBox.html("");
+    tempCount=0
+  }
+  else if ($('.write-here').val().toLowerCase() === "@help"){
     helpFunction(e);
   }
   else if ($('.write-here').val().toLowerCase() === "help") {
@@ -80,8 +84,19 @@ submit.submit(function(e){
     chatBox.append('<div class="response-chat">' + "ello gubanor" + '</div>')
   }
   else if($('.write-here').val().toLowerCase().search("@giphy") >= 0){
-    giphyFunction(e)
+    giphyFunction(e);
     console.log($('.write-here').val().toLowerCase().search("@giphy"))
+  }
+  else if (tempCount === 1){
+    tempFunction(e);
+  }
+  else if (tempCount === 2){
+    tempFunction(e);
+  }
+
+  else if($('.write-here').val().toLowerCase().search("@temp") >= 0){
+    tempFunction(e);
+    console.log("temp Yay");
   }
   // else if($('.write-here').val().toLowerCase() === "bye"){
   //   $('body').html("bye");
