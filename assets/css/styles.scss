@@ -1,6 +1,7 @@
 // Colors:
 $white: #F3E5B1;
 $teal: #9DD5CB;
+$teal2: #9AFFDC;
 $turquoise: #013C4D;
 $orange: #D5441C;
 $reddish: #903749;
@@ -15,7 +16,179 @@ $grey: #DDDDDD;
 // font-family: 'Lobster Two', cursive;
 // font-family: 'Roboto Slab', serif;
 
+//
+// body {
+//   background: $grey;
+//   font-family: sans-serif;
+//   color: $grey;
+//   font-weight: normal;
+//   letter-spacing: 1px;
+//   font-size: 40px;
+// }
+// .container {
+//   background: $grey;
+//   width: 70%;
+//   margin: auto;
+//
+//   .logo {
+//     position: fixed;
+//     background: $teal;
+//     background: -webkit-linear-gradient(-45deg, $teal, $teal2); /* For Safari 5.1 to 6.0 */
+//     background: -o-linear-gradient(-45deg, $teal, $teal2); /* For Opera 11.1 to 12.0 */
+//     background: -moz-linear-gradient(-45deg, $teal, $teal2); /* For Firefox 3.6 to 15 */
+//     background: linear-gradient(-45deg, $teal, $teal2); /* Standard syntax */
+//     // http://www.w3schools.com/css/css3_gradients.asp
+//     border-bottom: 8px solid $blue3;
+//     width: 100%;
+//     height: 50px;
+//     padding: 80px 80px 0 60px;
+//     font-family: 'Lobster Two', cursive;
+//     color: $blue2;
+//     font-size: 80px;
+//   }
+//   .ice {
+//     width: 200px;
+//   }
+//   .logo2 {
+//     font-family: 'Roboto Slab', serif;
+//     font-weight: 700;
+//   }
+//   .logo:hover {
+//     color: $blue3;
+//   }
+//   .chat-box {
+//     width: 40%;
+//     margin: auto;
+//     padding: 260px 0 400px 0;
+//     overflow: auto;
+//     height: 1145px;
+//     line-height: 50px;
+//
+//     .response-chat {
+//       background: $blue1;
+//       border: 2px solid $blue1;
+//       border-top-right-radius: 20px;
+//       border-bottom-right-radius: 20px;
+//       padding: 30px;
+//       width: 30%;
+//       margin-right: 340px;
+//       margin-bottom: 20px;
+//       padding-left: 40px;
+//       font-family: sans-serif;
+//       font-weight: normal;
+//       letter-spacing: 1px;
+//       font-size: 40px;
+//       img {
+//       width: auto;
+//       height: auto;
+//       }
+//     }
+//     .response-chat:hover {
+//       background: $blue2;
+//     }
+//     .user-chat {
+//       background: $blue3;
+//       border: 2px solid $blue3;
+//       border-top-left-radius: 20px;
+//       border-bottom-left-radius: 20px;
+//       padding: 30px;
+//       width: 30%;
+//       margin: auto;
+//       margin-left: 340px;
+//       margin-bottom: 20px;
+//       padding-right: 40px;
+//       font-family: sans-serif;
+//       font-weight: normal;
+//       letter-spacing: 1px;
+//       font-size: 40px;
+//     }
+//     .user-chat:hover {
+//       background: $blue1;
+//     }
+//   }
+// }
+//
+// .user-container {
+//   position:fixed;
+//   left:0px;
+//   bottom:0px;
+//   width:40%;
+//   text-align: center;
+//   background: $teal2;
+//
+//   .hidden-icons {
+//     // display: none;
+//     background: $blue2;
+//     width: 100%;
+//     height: 100px;
+//     margin: auto;
+//     padding-top: 40px;
+//     padding-bottom: 100px;
+//     color: $grey;
+//     i {
+//       padding: 20px;
+//     }
+//   }
+//
+//   .user-input {
+//     .write-here {
+//       background: #FFF;
+//       border: 2px solid $teal;
+//       border-radius: 50px;
+//       width: 60%;
+//       height: 50px;
+//       margin-top: 40px;
+//       margin-bottom: 60px;
+//       padding: 20px;
+//       padding-left: 60px;
+//       color: $blue1;
+//       font-size: 36px;
+//       letter-spacing: 3px;
+//     }
+//     .commands-button {
+//       padding-right: 40px;
+//       color: $blue1;
+//     }
+//     .chat-button {
+//       // width: 100%;
+//       // height: 140px;
+//       padding-left: 20px;
+//       // text-align: center;
+//       // font-family: 'Roboto Slab', serif;
+//       color: $blue1;
+//       font-size: 50px;
+//       // letter-spacing: 4px;
+//       // font-weight: bold;
+//     }
+//     // .chat-button:hover {
+//     //     background: $blue1;
+//     //     border: 2px solid $blue1;
+//     //     color: $grey;
+//     // }
+//   }
+//
+//   .boxbox:hover button.chat-button, .boxbox:active button.chat-button, .boxbox:focus button.chat-button {
+//       outline: none;
+//       opacity: 1;
+//       margin-left: -50px;
+//     }
+//     .boxbox:hover button.chat-button:hover{
+//       background: $blue1;
+//     }
+//   }
 
+
+
+@media (min-width: 1025px) {  // Desktop
+
+}
+
+@media (min-width: 640px) {  // Tablet
+
+}
+
+
+@media (min-width: 320px) {  // Mobile
 body {
   background: $grey;
   font-family: sans-serif;
@@ -24,7 +197,6 @@ body {
   letter-spacing: 1px;
   font-size: 40px;
 }
-
 .container {
   background: $grey;
   width: 100%;
@@ -33,6 +205,11 @@ body {
   .logo {
     position: fixed;
     background: $teal;
+    background: -webkit-linear-gradient(-45deg, $teal, $teal2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-45deg, $teal, $teal2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-45deg, $teal, $teal2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-45deg, $teal, $teal2); /* Standard syntax */
+    // http://www.w3schools.com/css/css3_gradients.asp
     border-bottom: 8px solid $blue3;
     width: 100%;
     height: 150px;
@@ -41,7 +218,7 @@ body {
     color: $blue2;
     font-size: 80px;
   }
-  img {
+  .ice {
     width: 100px;
   }
   .logo2 {
@@ -71,6 +248,10 @@ body {
       font-weight: normal;
       letter-spacing: 1px;
       font-size: 40px;
+      img {
+      width: auto;
+      height: auto;
+      }
     }
     .response-chat:hover {
       background: $blue2;
@@ -94,40 +275,74 @@ body {
       background: $blue1;
     }
   }
-  .user-input {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    width:100%;
-    text-align: center;
+}
 
-    .write-here {
-      background: #FFF;
-      border: 2px solid #FFF;
-      width: 100%;
-      height: 200px;
-      margin-bottom: -5px;
+.user-container {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  text-align: center;
+  background: $teal2;
+
+  .hidden-icons {
+    display: none;
+    background: $blue2;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 40px 40px 100px 40px;
+    padding-bottom: 100px;
+    color: $grey;
+    i {
       padding: 20px;
-      color: $blue1;
-      font-size: 30px;
-      letter-spacing: 3px;
-    }
-    .chat-button {
-      background: $teal;
-      border: 2px solid $teal;
-      width: 100%;
-      height: 140px;
-      text-align: center;
-      font-family: 'Roboto Slab', serif;
-      color: $blue1;
-      font-size: 45px;
-      letter-spacing: 4px;
-      font-weight: bold;
-    }
-    .chat-button:hover {
-        background: $blue1;
-        border: 2px solid $blue1;
-        color: $grey;
     }
   }
-}
+
+  .user-input {
+    .write-here {
+      background: #FFF;
+      border: 2px solid $teal;
+      border-radius: 50px;
+      width: 60%;
+      height: 50px;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      padding: 20px;
+      padding-left: 60px;
+      color: $blue1;
+      font-size: 36px;
+      letter-spacing: 3px;
+    }
+    .commands-button {
+      padding-right: 40px;
+      color: $blue1;
+    }
+    .chat-button {
+      // width: 100%;
+      // height: 140px;
+      padding-left: 20px;
+      // text-align: center;
+      // font-family: 'Roboto Slab', serif;
+      color: $blue1;
+      font-size: 50px;
+      // letter-spacing: 4px;
+      // font-weight: bold;
+    }
+    // .chat-button:hover {
+    //     background: $blue1;
+    //     border: 2px solid $blue1;
+    //     color: $grey;
+    // }
+  }
+
+  .boxbox:hover button.chat-button, .boxbox:active button.chat-button, .boxbox:focus button.chat-button {
+      outline: none;
+      opacity: 1;
+      margin-left: -50px;
+    }
+    .boxbox:hover button.chat-button:hover{
+      background: $blue1;
+    }
+  }
+  }
