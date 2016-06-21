@@ -244,7 +244,7 @@ body {
       width: 70%;
       margin-right: 340px;
       margin-bottom: 20px;
-      padding-left: 40px;
+      padding-left: 60px;
       font-family: sans-serif;
       font-weight: normal;
       letter-spacing: 1px;
@@ -252,6 +252,8 @@ body {
       img {
       width: auto;
       height: auto;
+      // margin-left: auto;
+      // margin-right: auto;
       }
     }
     .response-chat:hover {
@@ -263,10 +265,10 @@ body {
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
       padding: 30px;
-      width: 60%;
-      margin-left: 340px;
+      width: 40%;
+      margin-left: 550px;
       margin-bottom: 20px;
-      padding-right: 40px;
+      padding-right: 60px;
       font-family: sans-serif;
       font-weight: normal;
       letter-spacing: 1px;
@@ -294,7 +296,7 @@ body {
     background: $blue3;
     width: 100%;
     height: 100px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     color: $blue3;
     i {
       padding: 50px;
@@ -334,11 +336,11 @@ body {
       border: 2px solid $teal;
       border-radius: 50px;
       width: 60%;
-      height: 50px;
+      height: 45px;
       margin-top: 40px;
       margin-bottom: 60px;
       padding: 20px;
-      padding-left: 60px;
+      padding-left: 50px;
       color: $blue1;
       font-size: 36px;
       letter-spacing: 3px;
@@ -355,14 +357,7 @@ body {
       // font-family: 'Roboto Slab', serif;
       color: $blue1;
       font-size: 50px;
-      // letter-spacing: 4px;
-      // font-weight: bold;
     }
-    // .chat-button:hover {
-    //     background: $blue1;
-    //     border: 2px solid $blue1;
-    //     color: $grey;
-    // }
   }
 
   .boxbox:hover button.chat-button, .boxbox:active button.chat-button, .boxbox:focus button.chat-button {
