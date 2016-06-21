@@ -211,6 +211,7 @@ body {
     background: linear-gradient(-45deg, $teal, $teal2); /* Standard syntax */
     // http://www.w3schools.com/css/css3_gradients.asp
     border-bottom: 8px solid $blue3;
+    box-shadow: 0 2px 40px $blue2; 
     width: 100%;
     height: 150px;
     padding: 80px 80px 0 60px;
