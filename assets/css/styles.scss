@@ -316,49 +316,42 @@ body {
       bottom:0px;
       width:100%;
       text-align: center;
-
-      .hidden-icons { //that are not hidden here...but still called hidden...
-        // display: inline-block;
-        width: 20%;
-        height: 400px;
-        padding-bottom: 100px;
-        background: $blue3;
         i {
-          padding: 50px;
-          // width: 25%;
-          color: $grey;
+          color: $blue1;
+        }
+        .desktop-icons {
+          display: none;
         }
         .icon-help {
-          // float: left;
+          height: 10px;
+          padding: 10px;
           // background: $reddish;
-          padding: 117px 10px 38px 30px;
-          color: $grey;
         }
         .icon-temp {
+          height: 10px;
+          padding: 10px;
           // background: $white;
-          padding: 117px 10px 38px 10px;
-          color: $grey;
         }
         .icon-giphy {
+          height: 10px;
+          padding: 10px;
           // background: $orange;
-          padding: 117px 10px 38px 10px;
-          color: $grey;
         }
         .icon-chill {
+          height: 10px;
+          padding: 10px;
           // background: $blue1;
-          padding: 117px 30px 38px 10px;
-          color: $grey;
         }
       }
 
-      .boxbox:hover button.chat-button, .boxbox:active button.chat-button, .boxbox:focus button.chat-button {
-          outline: none;
-          opacity: 1;
-          margin-left: -50px;
-        }
-        .boxbox:hover button.chat-button:hover{
-          background: $blue1;
-        }
+      // .boxbox:hover button.chat-button, .boxbox:active button.chat-button, .boxbox:focus button.chat-button {
+      //     outline: none;
+      //     opacity: 1;
+      //     margin-left: -50px;
+      //   }
+      //   .boxbox:hover button.chat-button:hover{
+      //     background: $blue1;
+      //   }
       }
 
 
@@ -368,8 +361,8 @@ body {
         .write-here {
           background: #FFF;
           border: 2px solid $teal;
-          border-top-left-radius: 10px;
-          border-bottom-left-radius: 10px;
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
           border-top-right-radius: 0;
           border-bottom-right-radius: 0;
           width: 20%;
@@ -384,7 +377,7 @@ body {
           letter-spacing: 2px;
         }
         .commands-button {
-          padding-right: 40px;
+          padding-right: 10px;
           color: $blue1;
         }
         .chat-button {
@@ -406,5 +399,9 @@ body {
           font-size: 20px;
           letter-spacing: 2px;
         }
+        .chat-button-lg:hover {
+          background: $blue1;
+          border: 2px solid $blue1;
+          color: $grey;
+        }
       }
-  }
