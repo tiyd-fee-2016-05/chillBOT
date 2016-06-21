@@ -24,25 +24,36 @@
       <div class="response-chat"><i class="fa fa-caret-right" aria-hidden="true"></i> sup,<br>type @help for a list of commands</div>
       <!-- <div class="user-chat text">User chat: Words words words</div> -->
     </div>
+  </div>
 
 
-    <form class="user-input">
+    <!-- <form class="user-input">
       <textarea class="write-here" placeholder="start typing here..."></textarea>
       <button class="chat-button" type-"submit">SEND</div>
-    </form>
+    </form> -->
 
-    <div class="box">
-      <div class="container-1">
-        <span class="icon"><i class="fa fa-search"></i></span>
-        <input type="search" id="search" placeholder="start typing here..." />
+
+
+ <!-- ('.fa-info').click, .hidden-icons pops up, clicking icon adds text to .write-here -->
+
+    <div class="user-container">
+      <div class="hidden-icons">
+          <span class="icon-help"><i class="fa fa-question fa-3x"></i>
+          <i class="fa fa-sun-o fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-ticket fa-3x" aria-hidden="true"></i></i>
+      </div><!--caret-down after displayed-->
+
+      <div class="boxbox">
+        <form class="user-input">
+          <span class="commands-button"><i class="fa fa-info fa-lg"></i></span>
+          <input type="text" class="write-here" placeholder="type something here..." />
+          <span class="chat-button"><i class="fa fa-caret-right fa-lg"></i></span>
+        </form>
       </div>
     </div>
     <!-- http://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069 -->
 
-
-
-
-  </div>
   <script src="assets/js/app.js" type="text/javascript"></script>
   <script src="assets/js/help.js" type="text/javascript"></script>
   <script src="assets/js/giphy.js" type="text/javascript"></script>
