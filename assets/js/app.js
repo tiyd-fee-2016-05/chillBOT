@@ -3,7 +3,8 @@ var chatBox= $(".chat-box");
 var hellos= ["hello","hey","hi","sup","what's up","whats up"]
 //var input = $('.write-here');
 $('.fa-info').click(function(e){
-  $('.hidden-icons').toggle("display");
+  $('.hidden-icons').toggle();
+  $('.user-input').css("box-shadow", "0 -18px 40px #28385e");
 })
 //function to display help options
 $(".write-here").keypress(function (e) {  //Got this from stackoverflow, allows the enter key to work as a submit but not shift enter. Stackoverflow is bae
