@@ -286,12 +286,12 @@ body {
   background: $teal2;
 
   .hidden-icons {
-    // display: none;
+    display: none;
     background: $blue2;
     width: 100%;
     height: 100px;
     margin: auto;
-    padding-top: 40px;
+    padding: 40px 40px 100px 40px;
     padding-bottom: 100px;
     color: $grey;
     i {
