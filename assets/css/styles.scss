@@ -18,7 +18,7 @@ $grey: #DDDDDD;
 
 
 
-@media (min-width: 320px) {  // Mobile
+@media (max-width: 1024px) and (min-width: 1px) {  // Mobile
 body {
   font-family: sans-serif;
   color: $grey;
@@ -106,7 +106,7 @@ body {
       background: $blue1;
     }
   }
-}
+//}
 
 .desktop-user-container { display: none; }
 .mobile-user-container {
@@ -155,22 +155,13 @@ body {
       color: $grey;
     }
   }
-
-  .boxbox:hover button.chat-button, .boxbox:active button.chat-button, .boxbox:focus button.chat-button {
-      outline: none;
-      opacity: 1;
-      margin-left: -50px;
-    }
-    .boxbox:hover button.chat-button:hover{
-      background: $blue1;
-    }
-  }
+}
 
   .user-input {
+    display: block;
     position: relative;
     z-index: 1;
     background: $teal2;
-    // box-shadow: 0 -18px 40px $blue1; //appear when .fa-info is clicked
     .write-here {
       background: #FFF;
       border: 2px solid $teal;
@@ -204,10 +195,10 @@ body {
   }
   }
 
-  @media (min-width: 640px) {  // Tablet
-  .container {
-    background: $grey;
-  }
+  // @media (min-width: 640px) {  // Tablet
+  // .container {
+  //   background: $grey;
+  // }
 
 
   }
@@ -233,7 +224,7 @@ body {
         background: -moz-linear-gradient(-90deg, $teal, $teal2); /* For Firefox 3.6 to 15 */
         background: linear-gradient(-90deg, $teal, $teal2); /* Standard syntax */
         // http://www.w3schools.com/css/css3_gradients.asp
-        border-bottom: 3px solid $blue3;
+        border-bottom: 3px solid $blue2;
         box-shadow: 0 2px 10px $blue2;
         width: 100%;
         height: 40px;
@@ -252,9 +243,9 @@ body {
         font-weight: 700;
       }
       .logo:hover {
-        background: $turquoise;
+        background: $blue1;
         border-bottom: 3px solid $teal;
-        color: $teal2;
+        color: $grey;
       }
       .chat-box {
         padding: 160px 0 50px 0;
@@ -315,6 +306,7 @@ body {
       left:0px;
       bottom:0px;
       width:100%;
+      // background: $grey;
       text-align: center;
         i {
           color: $blue1;
@@ -352,7 +344,7 @@ body {
       //   .boxbox:hover button.chat-button:hover{
       //     background: $blue1;
       //   }
-      }
+
 
 
       .user-input {
@@ -405,3 +397,4 @@ body {
           color: $grey;
         }
       }
+    }
