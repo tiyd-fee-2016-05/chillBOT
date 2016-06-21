@@ -20,6 +20,10 @@ submit.submit(function(e){
   else if ($('.write-here').val().toLowerCase() === "help") {
     chatBox.append('<div class="response-chat">' + "Did you mean @help?" + '</div>');
   }
+  else if ($('.write-here').val().toLowerCase().search("@chill") >=0){
+    chillFunction(e);
+    console.log("chill");
+  }
   else if ($.inArray($('.write-here').val().toLowerCase(), hellos)  >= 0){
     chatBox.append('<div class="response-chat">' + "ello gubanor" + '</div>')
   }
