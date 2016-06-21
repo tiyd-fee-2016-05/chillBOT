@@ -48,6 +48,9 @@
         font-weight: normal;
         letter-spacing: 1px;
         font-size: 40px; }
+        .container .chat-box .response-chat img {
+          height: auto;
+          width: auto; }
       .container .chat-box .response-chat:hover {
         background: #304163; }
       .container .chat-box .user-chat {
