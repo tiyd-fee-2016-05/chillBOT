@@ -29,32 +29,39 @@ $('.fa-info').click(function(e){
     $(".icon-help").click(function(e){
       console.log("this works");
       $('.write-here').val("@help");
+    if($(window).width() <= 1024){
       $('.hidden-icons').slideUp("fast", (function(){
         $('.user-input').css("box-shadow", "none");
         count = 1;
       }));
-    });
+    };
+  });
     $(".icon-temp").click(function(e){
       $('.write-here').val("@temp");
-      $('.hidden-icons').slideUp("fast", (function(){
-        $('.user-input').css("box-shadow", "none");
-        count = 1;
-      }));
+      if($(window).width() <= 1024){
+        $('.hidden-icons').slideUp("fast", (function(){
+          $('.user-input').css("box-shadow", "none");
+          count = 1;
+        }));
+      };
     });
     $(".icon-giphy").click(function(e){
       $('.write-here').val("@giphy");
-      $('.hidden-icons').slideUp("fast", (function(){
-        $('.user-input').css("box-shadow", "none");
-        count = 1;
-      }));
-
+      if($(window).width() <= 1024){
+        $('.hidden-icons').slideUp("fast", (function(){
+          $('.user-input').css("box-shadow", "none");
+          count = 1;
+        }));
+      };
     });
     $(".icon-chill").click(function(e){
       $('.write-here').val("@chill");
-      $('.hidden-icons').slideUp("fast", (function(){
-        $('.user-input').css("box-shadow", "none");
-        count = 1;
-      }));
+      if($(window).width() <= 1024){
+        $('.hidden-icons').slideUp("fast", (function(){
+          $('.user-input').css("box-shadow", "none");
+          count = 1;
+        }));
+      };
     });
 
 
