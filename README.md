@@ -5,4 +5,4 @@
 
 *Nastassia* - HTML & CSS files
 
-Pair programming across all files
+Pair programming across all files (especially with responsiveness)
