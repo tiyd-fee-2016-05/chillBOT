@@ -204,7 +204,7 @@ body {
 }
 .container {
   background: $grey;
-  width: 100%;
+  width: auto;
   margin: auto;
 
   .logo {
@@ -237,11 +237,13 @@ body {
 
   .chat-box {
     padding: 160px 0 300px 0;
-    overflow: auto;
+    // overflow: auto;
+    overflow-y: hidden;
     height: 400px;
     line-height: 26px;
     font-family: sans-serif;
     font-weight: normal;
+    width: 90%;
     letter-spacing: 2px;
     font-size: 20px;
     word-wrap: break-word;
@@ -257,7 +259,7 @@ body {
       margin-bottom: 20px;
       padding-left: 60px;
       img {
-      width: auto;
+      width: 25%;
       height: auto;
       // margin-left: auto;
       // margin-right: auto;
@@ -272,10 +274,12 @@ body {
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
       padding: 20px;
-      width: 30%;
-      margin-left: 650px;
+      width: 35%;
+      margin-left: 70%;
       margin-bottom: 20px;
       padding-right: 60px;
+      word-wrap: break-word;
+
     }
     .user-chat:hover {
       background: $blue1;
@@ -351,7 +355,7 @@ body {
       margin-top: 40px;
       margin-bottom: 60px;
       padding: 20px;
-      padding-left: 50px;
+      padding-left: 40px;
       color: $blue1;
       font-size: 20px;
       letter-spacing: 2px;
@@ -461,7 +465,7 @@ body {
         width:35%;
         height: 550px;
         padding: 160px 0 100px 0;
-        overflow: hidden;
+        overflow: auto;
         line-height: 16px;
         background: pink;
         background: -webkit-linear-gradient(90deg, pink, gold); /* For Safari 5.1 to 6.0 */
