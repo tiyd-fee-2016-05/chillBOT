@@ -65,13 +65,14 @@ body {
       overflow: auto;
       height: 1145px;
       line-height: 50px;
+      word-wrap: break-word;
 
       .response-chat {
         background: $blue1;
         border: 2px solid $blue1;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        padding: 30px;
+        padding: 20px;
         width: 70%;
         margin-right: 340px;
         margin-bottom: 20px;
@@ -94,8 +95,8 @@ body {
         border: 2px solid $blue3;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        padding: 30px;
-        width: 40%;
+        padding: 20px;
+        width: 50%;
         margin-left: 550px;
         margin-bottom: 20px;
         padding-right: 60px;
@@ -106,6 +107,7 @@ body {
       }
       .user-chat:hover {
         background: $blue1;
+        border: 2px solid $blue1;
       }
     }
 
@@ -121,8 +123,6 @@ body {
       display: none;
       position: relative;
       z-index: 0;
-      // display: inline-block;
-      // float: left;
       background: $blue3;
       width: 100%;
       height: 100px;
@@ -130,7 +130,6 @@ body {
       color: $blue3;
       i {
         padding: 50px;
-        // width: 25%;
         color: $grey;
       }
       .icon-help {
@@ -197,12 +196,11 @@ body {
 
 @media (max-width: 1024px) and (min-width: 768px) {  // Tablet
 body {
-
   font-family: sans-serif;
   color: $grey;
   font-weight: normal;
   letter-spacing: 1px;
-  font-size: 40px;
+  font-size: 20px;
 }
 .container {
   background: $grey;
@@ -217,17 +215,17 @@ body {
     background: -moz-linear-gradient(-45deg, $teal, $teal2); /* For Firefox 3.6 to 15 */
     background: linear-gradient(-45deg, $teal, $teal2); /* Standard syntax */
     // http://www.w3schools.com/css/css3_gradients.asp
-    border-bottom: 8px solid $blue3;
-    box-shadow: 0 2px 40px $blue2;
+    border-bottom: 4px solid $blue3;
+    box-shadow: 0 2px 15px $blue2;
     width: 100%;
-    height: 150px;
-    padding: 80px 80px 0 60px;
+    height: 50px;
+    padding: 40px 0 30px 70px;
     font-family: 'Lobster Two', cursive;
     color: $blue2;
-    font-size: 80px;
+    font-size: 40px;
   }
   .ice {
-    width: 100px;
+    width: 50px;
   }
   .logo2 {
     font-family: 'Roboto Slab', serif;
@@ -236,25 +234,28 @@ body {
   .logo:hover {
     color: $blue3;
   }
+
   .chat-box {
-    padding: 260px 0 400px 0;
+    padding: 160px 0 300px 0;
     overflow: auto;
-    height: 1145px;
-    line-height: 50px;
+    height: 400px;
+    line-height: 26px;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 20px;
+    word-wrap: break-word;
 
     .response-chat {
       background: $blue1;
       border: 2px solid $blue1;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      padding: 30px;
-      width: 70%;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 20px;
+      width: 50%;
       margin-right: 340px;
       margin-bottom: 20px;
       padding-left: 60px;
-      font-family: sans-serif;
-      font-weight: normal;
-      letter-spacing: 1px;
       img {
       width: auto;
       height: auto;
@@ -268,17 +269,13 @@ body {
     .user-chat {
       background: $blue3;
       border: 2px solid $blue3;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-      padding: 30px;
-      width: 40%;
-      margin-left: 550px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding: 20px;
+      width: 30%;
+      margin-left: 650px;
       margin-bottom: 20px;
       padding-right: 60px;
-      font-family: sans-serif;
-      font-weight: normal;
-      letter-spacing: 1px;
-      font-size: 40px;
     }
     .user-chat:hover {
       background: $blue1;
@@ -301,9 +298,10 @@ body {
     // float: left;
     background: $blue3;
     width: 100%;
-    height: 100px;
+    height: 40px;
     padding-bottom: 100px;
     color: $blue3;
+    font-size: 30px;
     i {
       padding: 50px;
       // width: 25%;
@@ -335,9 +333,15 @@ body {
 
   .user-input {
     display: block;
-    position: relative;
+    // position: relative;
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
     z-index: 1;
     background: $teal2;
+    width: 100%;
+    height: 60px;
+    padding-bottom: 70px;
     .write-here {
       background: #FFF;
       border: 2px solid $teal;
@@ -346,7 +350,7 @@ body {
       height: 10px;
       margin-top: 40px;
       margin-bottom: 60px;
-      padding: 10px;
+      padding: 20px;
       padding-left: 50px;
       color: $blue1;
       font-size: 20px;
@@ -355,12 +359,12 @@ body {
     .commands-button {
       padding-right: 40px;
       color: $blue1;
-      font-size: 20px;
+      font-size: 30px;
     }
     .chat-button {
       // width: 100%;
       // height: 140px;
-      padding-left: 20px;
+      padding-left: 40px;
       // text-align: center;
       // font-family: 'Roboto Slab', serif;
       color: $blue1;
