@@ -4,6 +4,7 @@ var hellos= ["hello","hey","hi","sup","what's up","whats up"]
 var responses = ["that's chill", "totes", "I'm not sure what you're trying to say", "huh?", "word", "pizza?", "Have you ever been to the Catskills in September?", "Today is gonna be a good day", "Out of the office, try again later."]
 //var input = $('.write-here');
   var count = 1;
+  console.log("count=" + count)
 $('.fa-info').click(function(e){
   if (count === 1) {
     $('.write-here').val("");
@@ -11,42 +12,9 @@ $('.fa-info').click(function(e){
     $('.hidden-icons').slideDown("fast", (function(){
     $('.user-input').css("box-shadow", "0 -18px 40px #28385e");
     console.log(count);
+    count ++
   }));
-  // });
-//  $('.user-input').css("box-shadow", "0 -18px 40px #28385e");
-  count++
-  console.log(count)
-    $(".icon-help").click(function(e){
-      console.log("this works");
-      $('.write-here').val("@help");
-      $('.hidden-icons').slideUp("fast", (function(){
-        $('.user-input').css("box-shadow", "none");
-        count = 1;
-      }));
-    });
-    $(".icon-temp").click(function(e){
-      $('.write-here').val("@temp");
-      $('.hidden-icons').slideUp("fast", (function(){
-        $('.user-input').css("box-shadow", "none");
-        count = 1;
-      }));
-    });
-    $(".icon-giphy").click(function(e){
-      $('.write-here').val("@giphy");
-      $('.hidden-icons').slideUp("fast", (function(){
-        $('.user-input').css("box-shadow", "none");
-        count = 1;
-      }));
-
-    });
-    $(".icon-chill").click(function(e){
-      $('.write-here').val("@chill");
-      $('.hidden-icons').slideUp("fast", (function(){
-        $('.user-input').css("box-shadow", "none");
-        count = 1;
-      }));
-    });
- }
+}
   else if (count === 2) {
     $('.hidden-icons').slideUp("fast", (function(){
       $('.user-input').css("box-shadow", "none");
@@ -54,7 +22,51 @@ $('.fa-info').click(function(e){
       console.log(count);
     }));
   }
-})
+});
+
+  // });
+//  $('.user-input').css("box-shadow", "0 -18px 40px #28385e");
+
+  console.log(count)
+    $(".icon-help").click(function(e){
+      console.log("this works");
+      $('.write-here').val("@help");
+    if($(window).width() <= 1024){
+      $('.hidden-icons').slideUp("fast", (function(){
+        $('.user-input').css("box-shadow", "none");
+        count = 1;
+      }));
+    };
+  });
+    $(".icon-temp").click(function(e){
+      $('.write-here').val("@temp");
+      if($(window).width() <= 1024){
+        $('.hidden-icons').slideUp("fast", (function(){
+          $('.user-input').css("box-shadow", "none");
+          count = 1;
+        }));
+      };
+    });
+    $(".icon-giphy").click(function(e){
+      $('.write-here').val("@giphy");
+      if($(window).width() <= 1024){
+        $('.hidden-icons').slideUp("fast", (function(){
+          $('.user-input').css("box-shadow", "none");
+          count = 1;
+        }));
+      };
+    });
+    $(".icon-chill").click(function(e){
+      $('.write-here').val("@chill");
+      if($(window).width() <= 1024){
+        $('.hidden-icons').slideUp("fast", (function(){
+          $('.user-input').css("box-shadow", "none");
+          count = 1;
+        }));
+      };
+    });
+
+
 
 //function to display help options
 $(".write-here").keypress(function (e) {  //Got this from stackoverflow, allows the enter key to work as a submit but not shift enter. Stackoverflow is bae
