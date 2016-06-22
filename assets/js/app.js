@@ -4,6 +4,7 @@ var hellos= ["hello","hey","hi","sup","what's up","whats up"]
 var responses = ["that's chill", "totes", "I'm not sure what you're trying to say", "huh?", "word", "pizza?", "Have you ever been to the Catskills in September?", "Today is gonna be a good day", "Out of the office, try again later."]
 //var input = $('.write-here');
   var count = 1;
+  console.log("count=" + count)
 $('.fa-info').click(function(e){
   if (count === 1) {
     $('.write-here').val("");
@@ -11,6 +12,7 @@ $('.fa-info').click(function(e){
     $('.hidden-icons').slideDown("fast", (function(){
     $('.user-input').css("box-shadow", "0 -18px 40px #28385e");
     console.log(count);
+    count ++
   }));
 }
   else if (count === 2) {
@@ -24,7 +26,7 @@ $('.fa-info').click(function(e){
 
   // });
 //  $('.user-input').css("box-shadow", "0 -18px 40px #28385e");
-  count++
+
   console.log(count)
     $(".icon-help").click(function(e){
       console.log("this works");
