@@ -1,6 +1,7 @@
 var submit = $(".user-input");
 var chatBox= $(".chat-box");
 var hellos= ["hello","hey","hi","sup","what's up","whats up"]
+var responses = ["that's chill", "totes", "I'm not sure what you're trying to say", "huh?", "word", "pizza?", "Have you ever been to the Catskills in September?", "Today is gonna be a good day", "Out of the office, try again later."]
 //var input = $('.write-here');
   var count = 1;
 $('.fa-info').click(function(e){
@@ -66,7 +67,11 @@ $(".write-here").keypress(function (e) {  //Got this from stackoverflow, allows 
 submit.submit(function(e){
   e.preventDefault();
   chatBox.append('<div class="user-chat">' + $('.write-here').val() + '</div>')
-  if ($('.write-here').val().toLowerCase() === "@help"){
+  if($('.write-here').val().toLowerCase() === "@clear"){
+    chatBox.html("");
+    tempCount=0
+  }
+  else if ($('.write-here').val().toLowerCase() === "@help"){
     helpFunction(e);
   }
   else if ($('.write-here').val().toLowerCase() === "help") {
@@ -80,13 +85,27 @@ submit.submit(function(e){
     chatBox.append('<div class="response-chat">' + "ello gubanor" + '</div>')
   }
   else if($('.write-here').val().toLowerCase().search("@giphy") >= 0){
-    giphyFunction(e)
+    giphyFunction(e);
     console.log($('.write-here').val().toLowerCase().search("@giphy"))
+  }
+  else if (tempCount === 1){
+    tempFunction(e);
+  }
+  else if (tempCount === 2){
+    tempFunction(e);
+  }
+
+  else if($('.write-here').val().toLowerCase().search("@temp") >= 0){
+    tempFunction(e);
+    console.log("temp Yay");
   }
   // else if($('.write-here').val().toLowerCase() === "bye"){
   //   $('body').html("bye");
   // }
   else{
+    randomResponse = Math.floor((Math.random() * responses.length))
+
+    chatBox.append('<div class="response-chat">' + responses[randomResponse] + '</div>')
     console.log("what?");
   }
 
