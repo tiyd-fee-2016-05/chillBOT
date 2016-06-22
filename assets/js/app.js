@@ -12,6 +12,16 @@ $('.fa-info').click(function(e){
     $('.user-input').css("box-shadow", "0 -18px 40px #28385e");
     console.log(count);
   }));
+}
+  else if (count === 2) {
+    $('.hidden-icons').slideUp("fast", (function(){
+      $('.user-input').css("box-shadow", "none");
+      count = 1;
+      console.log(count);
+    }));
+  }
+});
+
   // });
 //  $('.user-input').css("box-shadow", "0 -18px 40px #28385e");
   count++
@@ -46,15 +56,8 @@ $('.fa-info').click(function(e){
         count = 1;
       }));
     });
- }
-  else if (count === 2) {
-    $('.hidden-icons').slideUp("fast", (function(){
-      $('.user-input').css("box-shadow", "none");
-      count = 1;
-      console.log(count);
-    }));
-  }
-})
+
+
 
 //function to display help options
 $(".write-here").keypress(function (e) {  //Got this from stackoverflow, allows the enter key to work as a submit but not shift enter. Stackoverflow is bae
