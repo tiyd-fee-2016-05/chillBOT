@@ -375,13 +375,9 @@ body {
 
   @media (min-width: 1025px) {  // Desktop
     body {
-      background: pink;
-      background: -webkit-linear-gradient(-90deg, pink, gold); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(-90deg, pink, gold); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(-90deg, pink, gold); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(-90deg, pink, gold); /* Standard syntax */
+      background: $grey;
       font-family: sans-serif;
-      color: $blue1;
+      color: $grey;
       font-weight: normal;
       letter-spacing: 1px;
       font-size: 20px;
@@ -394,17 +390,17 @@ body {
       .logo {
         position: fixed;
         z-index: 1;
-        // background: $teal;
-        // background: -webkit-linear-gradient(-90deg, $teal, $teal2); /* For Safari 5.1 to 6.0 */
-        // background: -o-linear-gradient(-90deg, $teal, $teal2); /* For Opera 11.1 to 12.0 */
-        // background: -moz-linear-gradient(-90deg, $teal, $teal2); /* For Firefox 3.6 to 15 */
-        // background: linear-gradient(-90deg, $teal, $teal2); /* Standard syntax */
+        background: $teal;
+        background: -webkit-linear-gradient(-90deg, $teal, $teal2); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(-90deg, $teal, $teal2); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(-90deg, $teal, $teal2); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(-90deg, $teal, $teal2); /* Standard syntax */
         // http://www.w3schools.com/css/css3_gradients.asp
-        background: pink;
-        background: -webkit-linear-gradient(90deg, pink, gold); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(90deg, pink, gold); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(90deg, pink, gold); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(90deg, pink, gold); /* Standard syntax */
+        // background: pink;
+        // background: -webkit-linear-gradient(90deg, pink, gold); /* For Safari 5.1 to 6.0 */
+        // background: -o-linear-gradient(90deg, pink, gold); /* For Opera 11.1 to 12.0 */
+        // background: -moz-linear-gradient(90deg, pink, gold); /* For Firefox 3.6 to 15 */
+        // background: linear-gradient(90deg, pink, gold); /* Standard syntax */
         border-bottom: 3px solid $blue2;
         box-shadow: 0 2px 10px $blue2;
         width: 100%;
@@ -442,41 +438,29 @@ body {
         margin-right:auto;
         width:35%;
         height: 550px;
-        padding: 160px 0 100px 0;
+        padding: 130px 0 130px 0;
         overflow: auto;
         line-height: 16px;
-        background: pink;
-        background: -webkit-linear-gradient(90deg, pink, gold); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(90deg, pink, gold); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(90deg, pink, gold); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(90deg, pink, gold); /* Standard syntax */
+        font-family: sans-serif;
+        font-weight: normal;
+        letter-spacing: .5px;
+        font-size: 14px;
+
         .response-chat {
-          // background: $blue1;
+          background: $blue1;
           border: 2px solid #FFF;
-          background: pink;
-          background: -webkit-linear-gradient(-45deg, pink, gold); /* For Safari 5.1 to 6.0 */
-          background: -o-linear-gradient(-45deg, pink, gold); /* For Opera 11.1 to 12.0 */
-          background: -moz-linear-gradient(-45deg, pink, gold); /* For Firefox 3.6 to 15 */
-          background: linear-gradient(-45deg, pink, gold); /* Standard syntax */
           border-radius: 5px;
+          width: 70%;
+          margin-left: 10%;
+          margin-bottom: 10px;
           padding: 10px;
-          width: 60%;
-          margin-left: 75px;
-          margin-bottom: 20px;
           padding-left: 20px;
-          font-family: sans-serif;
-          font-weight: normal;
-          letter-spacing: 1px;
-          font-size: 14px;
           img {
           width: 75%;
           height: auto;
           // margin-left: auto;
           // margin-right: auto;
-          }
-        }
-
-
+          } }
         .response-chat:hover {
           // background: $blue2;
           border: 2px solid #FFF;
@@ -485,41 +469,29 @@ body {
           background: -o-linear-gradient(-90deg, pink, gold); /* For Opera 11.1 to 12.0 */
           background: -moz-linear-gradient(-90deg, pink, gold); /* For Firefox 3.6 to 15 */
           background: linear-gradient(-90deg, pink, gold); /* Standard syntax */
+          color: $blue1;
         }
         .user-chat {
-          // background: $blue3;
-          border: 2px solid #FFF;
-          background: pink;
-          background: -webkit-linear-gradient(-90deg, pink, gold); /* For Safari 5.1 to 6.0 */
-          background: -o-linear-gradient(-90deg, pink, gold); /* For Opera 11.1 to 12.0 */
-          background: -moz-linear-gradient(-90deg, pink, gold); /* For Firefox 3.6 to 15 */
-          background: linear-gradient(-90deg, pink, gold); /* Standard syntax */
+          background: $blue3;
           overflow: auto;
+          border: 2px solid #FFF;
           border-radius: 5px;
+          width: 70%;
+          margin-left: 10%;
+          margin-bottom: 10px;
           padding: 10px;
-          width: 30%;
-          word-wrap: break-word;
-          margin-left: 75px;
-          margin-bottom: 20px;
-          padding-right: 30px;
           padding-left: 20px;
-          font-family: sans-serif;
-          font-weight: normal;
-          letter-spacing: 1px;
-          font-size: 14px;
-
         }
         .user-chat:hover {
           // background: $blue1;
           border: 2px solid #FFF;
           background: pink;
-          background: -webkit-linear-gradient(-45deg, pink, gold); /* For Safari 5.1 to 6.0 */
-          background: -o-linear-gradient(-45deg, pink, gold); /* For Opera 11.1 to 12.0 */
-          background: -moz-linear-gradient(-45deg, pink, gold); /* For Firefox 3.6 to 15 */
-          background: linear-gradient(-45deg, pink, gold); /* Standard syntax */
-        }
-      }
-    }
+          background: -webkit-linear-gradient(90deg, pink, gold); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(90deg, pink, gold); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(90deg, pink, gold); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(90deg, pink, gold); /* Standard syntax */
+          color: $blue1;
+        } } }
 
     .user-container {
       display: inline-block;
