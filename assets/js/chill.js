@@ -10,7 +10,7 @@ $.ajax({
   randomMovie = Math.floor((Math.random() * json.length))
 
     chatBox.append(
-                      '<div class="response-chat">Title:' + json[randomMovie].show_title+ '</br></br>' + 'Summary:' + json[0].summary
+                      '<div class="response-chat">Title: ' + json[randomMovie].show_title+ '</br></br>' + 'Summary: ' + json[randomMovie].summary
                        + '</br>' + "<img src='" + json[randomMovie].poster + "'/>" + '</div>'
     );
     $(".chat-box").animate({ scrollTop: $(".chat-box")[0].scrollHeight}, 2500); //got this from Stackoverflow once again you are bae!

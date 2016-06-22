@@ -1,6 +1,7 @@
 var submit = $(".user-input");
 var chatBox= $(".chat-box");
 var hellos= ["hello","hey","hi","sup","what's up","whats up"]
+var responses = ["that's chill", "totes", "I'm not sure what you're trying to say", "huh?", "word", "pizza?", "Have you ever been to the Catskills in September?", "Today is gonna be a good day", "Out of the office, try again later."]
 //var input = $('.write-here');
   var count = 1;
 $('.fa-info').click(function(e){
@@ -102,6 +103,9 @@ submit.submit(function(e){
   //   $('body').html("bye");
   // }
   else{
+    randomResponse = Math.floor((Math.random() * responses.length))
+
+    chatBox.append('<div class="response-chat">' + responses[randomResponse] + '</div>')
     console.log("what?");
   }
 
