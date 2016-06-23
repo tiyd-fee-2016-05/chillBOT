@@ -12,7 +12,7 @@ function tempFunction(e) {
   state = $('.write-here').val()
   console.log(state);
   chatBox.append(
-    '<div class="response-chat">' + state + " chillll. what city?" + '</div>'
+    '<div class="response-chat">' + state + " Chillll. what city?" + '</div>'
   )
   tempCount=2;
   }
@@ -24,7 +24,7 @@ function tempFunction(e) {
       method: "GET",
     }).done(function(json){
       chatBox.append(
-        '<div class="response-chat">Looks like it is ' + json.current_observation.temp_f + ' degrees in ' + city + ', ' + state + '</div>'
+        '<div class="response-chat">Looks like it is ' + json.current_observation.temp_f + ' degrees in ' + city + ', ' + state +'.' + '</div>'
       )
       tempCount=0
       console.log(json);
