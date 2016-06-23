@@ -382,10 +382,12 @@ body {
       letter-spacing: 1px;
       font-size: 20px;
     }
+    .chat-box::-webkit-scrollbar { width: 0 !important }
     .container {
       // background: #fff;
       width: 100%;
       margin: auto;
+      overflow: hidden;
 
       .logo {
         position: fixed;

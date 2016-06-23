@@ -259,9 +259,13 @@ body {
     letter-spacing: 1px;
     font-size: 20px; }
 
+  .chat-box::-webkit-scrollbar {
+    width: 0 !important; }
+
   .container {
     width: 100%;
-    margin: auto; }
+    margin: auto;
+    overflow: hidden; }
     .container .logo {
       position: fixed;
       z-index: 1;
