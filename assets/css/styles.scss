@@ -79,16 +79,11 @@ body {
         border-bottom-right-radius: 20px;
         padding: 16px;
         width: 70%;
-        // width: auto;
-        // max-width: 70%;
         margin-right: 340px;
         margin-bottom: 20px;
         padding-left: 60px;
         img {
         width: 35%;
-        // max-height: 25%;
-        // margin-left: auto;
-        // margin-right: auto;
         }
       }
       .response-chat:hover {
@@ -134,27 +129,6 @@ body {
         padding: 30px;
         color: $grey;
       }
-      // .icon-help {
-      //   // float: left;
-      //   // background: $reddish;
-      //   // padding: 117px 10px 38px 30px;
-      //   color: $grey;
-      // }
-      // .icon-temp {
-      //   // background: $white;
-      //   padding: 117px 10px 38px 10px;
-      //   color: $grey;
-      // }
-      // .icon-giphy {
-      //   // background: $orange;
-      //   padding: 117px 10px 38px 10px;
-      //   color: $grey;
-      // }
-      // .icon-chill {
-      //   // background: $blue1;
-      //   padding: 117px 30px 38px 10px;
-      //   color: $grey;
-      // }
     }
   }
 
@@ -178,7 +152,7 @@ body {
         padding-left: 40px;
         color: $blue1;
         font-size: 20px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
       .commands-button {
         padding-right: 20px;
